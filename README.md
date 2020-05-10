@@ -6,9 +6,18 @@ Created a RESTful Web service that displays data of empires in JSON format using
 
 I have used two JSON file. 
 
+
+Dockerimage to run unoconv as a webservice using Flask and Flask-RESTful.
+
+If you prefer a pre-build version it is available from hub.docker.com just do a regular pull
+
+$ docker pull jordanorc/docker-unoconv-flask
+
 Build the image using command: 
+
 docker build -t docker-unoconv-flask .
 
 Run the Docker container using the command: 
+
 docker run -d -p 8000:8000 --name unoconvv jordanorc/docker-unoconv-flask
 
