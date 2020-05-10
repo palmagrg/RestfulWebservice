@@ -2,7 +2,7 @@
 Restful Webservice using Python Flask and Container
 A docker container running flask python environment shows a good RESTful API example
 
-Created a RESTful Web service that displays data of empires in JSON format using four get routes:
+Created a RESTful Web service that displays data of Skin Care product  in JSON format using four get routes:
 
 I have used two JSON file. 
 
