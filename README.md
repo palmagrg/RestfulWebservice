@@ -9,9 +9,9 @@ I have used two JSON file.
 
 Dockerimage to run unoconv as a webservice using Flask and Flask-RESTful.
 
-If you prefer a pre-build version it is available from hub.docker.com just do a regular pull
+Pre-build version  is available from hub.docker.com just do a regular pull
 
-$ docker pull jordanorc/docker-unoconv-flask
+docker pull jordanorc/docker-unoconv-flask
 
 Build the image using command: 
 
