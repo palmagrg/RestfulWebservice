@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+      <style type="text/css">
+         body {
+         background-image: url("https://i.pinimg.com/originals/5e/79/fb/5e79fbda97293c5073aa059fb49877bb.jpg");
+         background-size: cover;
+         font-size: 18px;
+		 }
+         .table td, .table th {
+         border-top: 1px solid black;
+         }
+         header {
+         height: 100px;
+         }
+         h1 {
+         text-align: center;
+         background-color: light-blue;
+         color: red;
+         height: 70%;
+         padding-top: 10px;
+         }
+         a {
+            padding: 5px;
+         }
+         a:link {
+         color: yellow;
+         }
+         a:visited {
+         color: yellow;
+         }
+         a:hover {
+         text-decoration: underline;
+         color: navy;
+         font-size: 16px;
+         }
+         a:active {
+         color: green;
+         }
+         .nav {
+            padding-left: 20px;
+            border-top: 5px;
+            border-bottom: 5px;
+         }
+         
+      </style>
+   </head>
+   <body>
+      <header>
+         <h1>Rise of Skincare </h1>
+      </header>
+      {% if list_data|length >= 1 %}
+      <table class="table">
+         <thead>
+            <tr>
+               <td><a class="nav" href="/skincarelist"> List of Skin Care </a></td>
+            </tr>
+            <tr>
+               <th scope="col">Product ID</th>
+               <th scope="col">Product Name</th>
+               <th scope="col">Type</th>
+               <th scope="col">Ingredients</th>
+               <th scope="col">Skin Type</th>
+               <th scope="col">Origin</th>
+               <th scope="col">Beauty Care</th>
+            </tr>
+         </thead>
+         <tbody>
+            {% for data in list_data %}
+            <tr>
+               <td scope="row"> <a href="/skincarelist/{{ data.skincareid }}"> {{ data.skincareid }} </a> </td>
+               <td scope="row"> {{ data.skincarename }} </td>
+               <td scope="row"> {{ data.symbol }} </td>
+               <td scope="row"> {{ data.ingredients }} </td>
+               <td scope="row"> {{ data.skintypes }} </td>
+               <td scope="row"> {{ data.origin }} </td>
+               <td scope="row"> <a href="/skincarelist/{{ data.skincareid }}/skincarelist1"> Cosmetic </a> </td>
+            </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+      {% endif %}
+      {% if list_skincarelist1_data|length >= 1 %}
+      <table class="table">
+         <thead>
+            <tr>
+               <td><a class="nav" href="/skincarelist"> All Skin Care List</a></td>
+               <td><a class="nav" href="/skincarelist/{{ skincare_id }}"> Daily Skincare </a></td>
+            </tr>
+            <tr>
+               <th scope="col">Skin Care ID</th>
+               <th scope="col">Skin Care Name</th>
+               <th scope="col">Skin Care Type</th>
+            </tr>
+         </thead>
+         <tbody>
+            {% for skincarelist1data in list_skincarelist1_data %}
+            <tr>
+               <td scope="row"> <a href="/skincarelist/{{ skincare_id }}/skincarelist1/{{ skincarelist1data.skincarelist1id }}"> {{ skincarelist1data.skincarelist1id }} </a> </td>
+               <td scope="row"> {{ skincarelist1data.skincarelist1name }} </td>
+               <td scope="row"> {{ skincarelist1data.typeid }} </td>
+            </tr>
+            {% endfor %}
+         </tbody>
+      </table>
+      {% endif %}
+   </body>
+</html>
+
+

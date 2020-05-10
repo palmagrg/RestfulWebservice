@@ -1,0 +1,68 @@
+{
+    "skincare": [{
+            "skincareid": "101",
+            "skincarelist1": [{
+                    "skincarelist1id": "1001",
+                    "skincarelist1name": "Essence",
+                    "typeid": "Face"
+                }, {
+                    "skincarelist1id": "1002",
+                    "skincarelist1name": "Serum",
+                    "typeid": "Cosmetic"
+                }
+            ]
+        },
+        {
+            "skincareid": "102",
+            "skincarelist1": [{
+                    "skincarelist1id": "1001",
+                    "skincarelist1name": "Toner",
+                    "typeid": "Body Care"
+                }, {
+                    "skincarelist1id": "1002",
+                    "skincarelist1name": "Moisturizer",
+                    "typeid": "Hair Care"
+                }
+            ]
+        },
+        {
+            "skincareid": "103",
+            "skincarelist1": [{
+                    "skincarelist1id": "1001",
+                    "skincarelist1name": "Toner",
+                    "typeid": "Body Care"
+                }, {
+                    "skincarelist1id": "1002",
+                    "skincarelist1name": "Serum",
+                    "typeid": "Cosmetic"
+                }
+            ]
+        },
+        {
+            "skincareid": "104",
+            "skincarelist1": [{
+                    "skincarelist1id": "1001",
+                    "skincarelist1name": "Sunscreen",
+                    "typeid": "Hair Care"
+                }, {
+                    "skincarelist1id": "1002",
+                    "skincarelist1name": "Lotion",
+                    "typeid": "Cosmetic"
+                }
+            ]  
+        },
+        {
+            "skincareid": "105",
+            "skincarelist1": [{
+                    "skincarelist1id": "1001",
+                    "skincarelist1name": "Ampoule",
+                    "typeid": "Face Care"
+                }, {
+                    "skincarelist1id": "1002",
+                    "skincarelist1name": "Serum",
+                    "typeid": "Cosmetic"
+                }
+            ]
+        }
+    ]
+}

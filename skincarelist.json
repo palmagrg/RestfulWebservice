@@ -1,0 +1,43 @@
+{
+    "skincarelist": [{
+            "skincareid": "101",
+            "skincarename": "CosRx",
+            "symbol": "Face Care",
+            "ingredients": "Gylcerin",
+            "skintypes": "Dry",
+            "origin": "Korean"
+        },
+        {
+            "skincareid": "102",
+            "skincarename": "Missha",
+            "symbol": "Cosmetic",
+            "ingredients": "Glycolic acid",
+            "skintypes": "Oily",
+            "origin": "France"
+        },
+        {
+            "skincareid": "103",
+            "skincarename": "Dr.Jart",
+            "symbol": "HairCare",
+            "ingredients": "Salycyclic acid",
+            "skintypes": "Combination",
+            "origin": "UK"
+        },
+        {
+            "skincareid": "104",
+            "skincarename": "Cerave",
+            "symbol": "Footcare",
+            "ingredients": "Hydrogen",
+            "skintypes": "Dry",
+            "origin": "USA"   
+        },
+        {
+            "skincareid": "105",
+            "skincarename": "Aztecs",
+            "symbol": "Nails",
+            "ingredients": "Polish",
+            "skintypes": "Dry",
+            "origin": "Italy"
+        }
+    ]
+}
