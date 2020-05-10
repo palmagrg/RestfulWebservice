@@ -1,5 +1,5 @@
 # RestfulWebservice
-Restful Webservice using Python Flask and Container
+Restful Webservice using Python Flask and Docker Container
 
 
 A docker container running flask python environment shows a good RESTful API example
